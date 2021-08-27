@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="classes" name="Suite">
+
+  <test name="DemoGrid">
+		
+          <classes>
+            <class name="demoSeleniumGridHubAndNodeonDockerComposeChrome" />
+            <class name="demoSeleniumGridHubAndNodeonDockerComposeFirefox" />
+     	</classes>
+  </test>
+</suite> <!-- Suite -->

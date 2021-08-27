@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;demoCaptureScreenshot.java&apos; to &apos;demoCaptureScreenshot.java&apos;&#x0D;&#x0A;- Original project: &apos;Selenium4EBook&apos;&#x0D;&#x0A;- Destination element: &apos;demoCaptureScreenshot.java&apos;&#x0D;&#x0A;- Original element: &apos;demoCaptureScreenshot.java&apos;" description="Copy compilation unit" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;{demoCaptureScreenshot.java" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;{demoCaptureScreenshot.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1626789003209" units="1" version="1.0"/>
+</session>

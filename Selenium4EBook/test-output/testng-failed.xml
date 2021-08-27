@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="classes" name="DemoGrid(failed)">
+    <classes>
+      <class name="demoSeleniumGridHubAndNodeonDockerComposeChrome">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- demoSeleniumGridHubAndNodeonDockerComposeChrome -->
+    </classes>
+  </test> <!-- DemoGrid(failed) -->
+</suite> <!-- Failed suite [Suite] -->

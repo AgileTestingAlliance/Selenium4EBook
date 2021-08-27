@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-19T14:20:17 IST" name="Suite" finished-at="2021-08-19T14:23:18 IST" duration-ms="180714">
+    <groups>
+    </groups>
+    <test started-at="2021-08-19T14:20:17 IST" name="DemoGrid" finished-at="2021-08-19T14:23:18 IST" duration-ms="180714">
+      <class name="demoSeleniumGridHubAndNodeonDockerComposeChrome">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:demoSeleniumGridHubAndNodeonDockerComposeChrome@759d26fb]" started-at="2021-08-19T14:20:17 IST" name="beforeMethod" finished-at="2021-08-19T14:23:18 IST" duration-ms="180679" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-DV3IP41', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-DV3IP41', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:251)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at demoSeleniumGridHubAndNodeonDockerComposeChrome.beforeMethod(demoSeleniumGridHubAndNodeonDockerComposeChrome.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:82)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:103)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+... 23 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to 34.125.112.81/34.125.112.81:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+... 36 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to 34.125.112.81/34.125.112.81:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="launchApplication()[pri:0, instance:demoSeleniumGridHubAndNodeonDockerComposeChrome@759d26fb]" started-at="2021-08-19T14:23:18 IST" name="launchApplication" finished-at="2021-08-19T14:23:18 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-DV3IP41', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'DESKTOP-DV3IP41', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {browserName: chrome}}]
+Capabilities {}
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:251)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+at demoSeleniumGridHubAndNodeonDockerComposeChrome.beforeMethod(demoSeleniumGridHubAndNodeonDockerComposeChrome.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:82)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:103)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+... 23 more
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to 34.125.112.81/34.125.112.81:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+... 36 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to 34.125.112.81/34.125.112.81:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demoSeleniumGridHubAndNodeonDockerComposeChrome@759d26fb]" started-at="2021-08-19T14:23:18 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1629363198365" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- demoSeleniumGridHubAndNodeonDockerComposeChrome -->
+      <class name="demoSeleniumGridHubAndNodeonDockerComposeFirefox">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:demoSeleniumGridHubAndNodeonDockerComposeFirefox@3c73951]" started-at="2021-08-19T14:20:17 IST" name="beforeMethod" finished-at="2021-08-19T14:20:26 IST" duration-ms="8618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="launchApplication()[pri:0, instance:demoSeleniumGridHubAndNodeonDockerComposeFirefox@3c73951]" started-at="2021-08-19T14:20:26 IST" name="launchApplication" finished-at="2021-08-19T14:21:25 IST" duration-ms="59061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:demoSeleniumGridHubAndNodeonDockerComposeFirefox@3c73951]" started-at="2021-08-19T14:21:25 IST" name="afterMethod" finished-at="2021-08-19T14:21:26 IST" duration-ms="850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- demoSeleniumGridHubAndNodeonDockerComposeFirefox -->
+    </test> <!-- DemoGrid -->
+  </suite> <!-- Suite -->
+</testng-results>
